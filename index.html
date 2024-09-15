@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="icons/favicon.png"
+      type="image/plant-icon"
+    />
+    <link rel="stylesheet" href="input.css" />
+
+    <title>Plant Shop</title>
+  </head>
+  <body class="bg-primary w-full h-lvh font-Raleway">
+    <header class="hidden sm:block sm:bg-mediumGreen  w-full h-16 relative">
+      <nav>
+        <ul
+          class="hidden h-16 sm:flex items-center justify-center space-x-10 px-8 text-white text-base"
+        >
+          <li class="absolute left-16">
+            <i class="fas fa-leaf text-white"></i>
+            <a href="#" class="text-2xl"> Plantt</a>
+          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+        <!-- Mobile menu start -->
+        <!-- Sidebar Start-->
+        <div id="sidebar" class=" z-20 sm:hidden  flex justify-center fixed flex-col items-end right-0 p-2 w-14 h-full overflow-hidden text-white font-Raleway text-base bg-mediumGreen rounded-s-md">
+          <ul class="flex items-start flex-col space-y-12 m-3">
+            <li>
+              <i class="fas fa-leaf text-white text-lg"></i>
+              <span id="sidebar-text" class="hidden px-3">Plant</span>
+            </li>
+            <span class="w-full h-[1px] bg-white"></span>
+            <li>
+              <a href="#">
+                <i class="fas fa-home text-white text-base"></i>
+                <span id="sidebar-text" class="hidden text-center px-3"
+                  >Home</span
+                >
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-shop text-white text-base"></i>
+                <span id="sidebar-text" class="hidden px-3">Shop</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fas fa-info-circle text-lg text-white"></i>
+                <span id="sidebar-text" class="hidden px-3">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="*">
+                <i class="fas fa-envelope text-white text-base"></i>
+                <span id="sidebar-text" class="hidden px-3">Contact</span>
+              </a>
+            </li>
+            <li>
+              <a href="*">
+                <i class="fas fa-newspaper text-white lg"></i>
+                <span id="sidebar-text" class="hidden px-3">Blog</span>
+              </a>
+            </li>
+
+            <span class="w-full h-[1px] bg-white"></span>
+            <li>
+              <i class="fas fa-user text-white text-base"></i>
+              <span id="sidebar-text" class="hidden">Profile</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Sidebar Ends -->
+        <!-- Mobile menu ends -->
+   
+ <main class="w-full flex h-full">
+   <img src="Images/aureum.png" class="w-60 absolute right-0">
+  <div class="flex justify-center items-center">
+
+    <span class="text-black text-wrap">Trees Plants to grow in</span>
+
+    <!-- <img src="Images/aglaonema.png" class=" w-48 "> -->
+    
+
+  </div>
+
+ </main>
+
+ <!-- <section class="h-full"></section> -->
+
+  </body>
+  <script src="js/sidebar.js"></script>
+</html>

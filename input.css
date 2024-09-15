@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variable color */
+:root{
+
+    --primary-color:#F2F7F2;
+    --light-dark:#6F736E;
+    --medium-green:#2D3D2A;
+    --dark-green:#081B03;
+    --normal-green:#4D933E;
+    
+}
+
+.sidebar{
+    transition: width 0.5s ease-in-out;
+}
+
