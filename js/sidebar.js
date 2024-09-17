@@ -1,24 +1,44 @@
 const sidebar = document.querySelector('#sidebar');
 const sidebarText = document.querySelectorAll('#sidebar-text');
 
-// setInterval(()=>{
-//     sidebar.style.opacity =0.1;
-    
-// },5000);
+let shrinkTimeout;
 
+function shrinkSidebar(){
+    sidebar.classList.add('w-2');
+    sidebar.classList.remove('w-44');
+    console.log('Sidebar Added');
+}
 
+function resetShrinkTimeout(){
+    clearTimeout(shrinkTimeout);
+    shrinkTimeout = setTimeout(shrinkSidebar,5000);
+}
 
- sidebar.addEventListener('click', (e)=>{
-    sidebar.classList.toggle('w-14');
-    sidebar.classList.toggle('w-40');
-    // sidebar.style.opacity=1;
+shrinkTimeout=setTimeout(shrinkSidebar,5000);
 
+sidebar.addEventListener('click', ()=>{
+    if(sidebar.classList.contains('w-2')){
 
-sidebarText.forEach((text)=>{
-text.classList.toggle('hidden');
-})
+        sidebar.classList.remove('w-2');
+        sidebar.classList.add('w-44');
 
- });
+    }
 
+    else{
+        sidebar.classList.remove('w-44');
+        // sidebar.classList.add('w-14');
+    }
 
+    sidebarText.forEach ((text)=>{
 
+        text.classList.toggle('hidden');
+    });
+
+    resetShrinkTimeout();
+
+});
+
+['mouseover','touchstart','touchmove'].forEach((event)=>{
+    sidebar.addEventListener(event,resetShrinkTimeout);
+
+});
