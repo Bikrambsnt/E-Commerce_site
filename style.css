@@ -1,1 +1,14 @@
 
+  .discount-card {
+    /* Optional styles for the card */
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    background-color: #ff0000; /* Red background */
+    color: #ffffff; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.875rem; /* Small font size */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  

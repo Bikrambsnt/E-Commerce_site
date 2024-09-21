@@ -15,11 +15,9 @@
     <title>Plantt</title>
   </head>
   <body class="bg-primary w-full h-lvh font-Raleway">
-    <header class="hidden sm:block sm:bg-mediumGreen  w-full h-16 relative">
+    <header class="hidden sm:block sm:bg-mediumGreen  w-screen h-16 relative">
       <nav>
-        <ul
-          class="hidden h-16 sm:flex items-center justify-center space-x-10 px-8 text-white text-base"
-        >
+        <ul class="hidden h-16 sm:flex items-center justify-center space-x-10 px-8 text-white text-base sm:space-x-4">
           <li class="absolute left-16">
             <i class="fas fa-leaf text-white"></i>
             <a href="#" class="text-2xl"> Plantt</a>
@@ -34,7 +32,7 @@
     </header>
         <!-- Mobile menu start -->
         <!-- Sidebar Start-->
-        <div id="sidebar" class=" z-20 sm:hidden  flex justify-center fixed flex-col items-end right-0 p-2 h-full overflow-hidden text-white font-Raleway text-base bg-mediumGreen rounded-s-md">
+        <div id="sidebar" class=" z-20 sm:hidden  flex justify-center w-auto fixed flex-col items-end right-0 p-2  h-full overflow-hidden text-white font-Raleway text-base bg-mediumGreen rounded-s-md">
           <ul class="flex items-start flex-col space-y-12 m-3">
             <li>
               <i class="fas fa-leaf text-white text-lg"></i>
@@ -85,27 +83,24 @@
         <!-- Mobile menu ends -->
    
  <main class="w-ful h-screen">
-   <img src="Images/aureum.png" class="w-60 absolute right-0 -z-10 opacity-60">
-  <div class="flex h-52 items-center flex-row flex-wrap">
-
-    <span class="text-darkGreen font-bold p-4 max-w-[70%] text-4xl mt-2">Trees Plants to Grow in<span class="text-lightDark m-2">Your Living Room</span>
-
-
-
+   <img src="Images/aureum.png" class=" w-60 absolute right-0 -z-10 opacity-60 xs:w-80 xs:opacity-90 sm:opacity-100 ">
+  <div class="flex h-52 items-center flex-row flex-wrap sm:justify-center">
+ <img src="Images/aglaonema.png" class="w-60 hidden sm:block sm:w-48 sm:mb-10">
+    <span class="text-darkGreen text-left font-bold p-4 max-w-[70%] text-4xl mt-2 xs:m-10 xs:max-w-[50%] xs:text-5xl sm:p-0">Trees Plants to Grow in<span class="text-lightDark m-2">Your Living Room</span>
   </div>
 
-  <div class="flex items-end justify-center flex-row w-full">
-    <span class="w-56 -ml-10 -z-10 ">
+  <div class="flex items-end justify-center flex-row w-full xs:p-10 xs:justify-between sm:justify-center">
+    <span class="badge w-56 -ml-10 -z-10 xs:w-64 sm:hidden">
       <img src="Images/aglaonema.png">
     </span>
    <span> 
-    <button class="w-32 h-12 bg-normalGreen text-white rounded-md mb-5">Shop Now</button>
+    <button class="w-32 h-12 bg-normalGreen text-white rounded-md mb-5 mr-10 xs:w-36 sm:m-0">Shop Now</button>
     </span>
   </div>
 
-  <div class="flex justify-center flex-wrap">
-    <div class="w-96 h-auto bg-white m-0 p-5 rounded-2xl">
-      <span class="text-base text-lightDark font-light max-w-80">Tree Planting is the process Of transplanting tree seedlings, generally for
+  <div class="flex justify-center flex-wrap sm:flex-nowrap sm:w-full ">
+    <div class="w-96 h-auto bg-white m-0 p-5 rounded-2xl xs:w-[34rem]">
+      <span class="text-base text-lightDark font-light max-w-80 ">Tree Planting is the process Of transplanting tree seedlings, generally for
         forestry,land reclamation.It differs from the transplantion of larger trees in abroriculture
       </span>
       <div class="mt-4">
@@ -127,7 +122,7 @@
 
 
     </div>
-    <div class="w-96 h-auto bg-white m-0.5 rounded-2xl">
+    <div class="w-96 h-auto bg-white m-0.5 mt-5 rounded-2xl xs:w-[34rem] sm:mt-0">
       <img src="Images/flower.jpg" class="w-full h-full rounded-2xl">
       
     </div>
